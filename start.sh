@@ -1,4 +1,4 @@
-export MOVIE_API_KEY=<Your api key>
-export SECRET_KEY=<Your secret key>
+export NEWS_API_KEY='c0ccbdb1740d4e6990dc52150c79dfd6'
+export SECRET_KEY='KabageMark'
 
 python3.6 manage.py server
