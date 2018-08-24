@@ -19,3 +19,8 @@ def sources():
     print(source_news_url)
     title = 'Home - Welcome to The best Movie Review Website Online'
     return render_template('sources.html', title = title,general = source_news_general,Url = source_news_url,sports = source_news_sports,technology = source_news_technology,business = source_news_business)
+
+@main.route('/sources/articles/<id>')
+def articles(id):
+    articles_args = get_articles(id)
+    return render_template('articles.html',articles = articles_args ) 
