@@ -3,7 +3,7 @@ from ..request import get_articles
 from flask import render_template,request,redirect,url_for
 from . import main
                   
-@main.route('/')
+@main.route('/soures')
 def sources():
 
     '''
@@ -23,4 +23,4 @@ def sources():
 @main.route('/sources/articles/<id>')
 def articles(id):
     articles_args = get_articles(id)
-    return render_template('articles.html',articles = articles_args ) 
+    return render_template('articles.html',articles = articles_args) 
