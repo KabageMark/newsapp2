@@ -3,7 +3,7 @@ from ..request import get_articles
 from flask import render_template,request,redirect,url_for
 from . import main
                   
-@main.route('/soures')
+@main.route('/sources')
 def sources():
 
     '''
