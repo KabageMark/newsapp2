@@ -15,8 +15,6 @@ def sources():
     source_news_technology = get_source('technology')
     source_news_business = get_source('business')
     source_news_url = get_source('Url')
-    print(source_news_general)
-    print(source_news_url)
     title = 'Home - Welcome to The best Movie Review Website Online'
     return render_template('sources.html', title = title,general = source_news_general,Url = source_news_url,sports = source_news_sports,technology = source_news_technology,business = source_news_business)
 
