@@ -10,22 +10,23 @@
 {% endmacro %}
 
 {% macro displayArticles(articles_list)%}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
 <div class="container-fluid">
 <center><h1>Top Headlines</h1></center>
     {% for article in articles_list %}
-
-
-    <h2>{{article.author}}</h2>
-    <br>
+   
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            {{article.author}}</div>
+        <div class="panel-body">
+            <a href=/sources/articles/fullarticle"{{article.urlToImage}}">click to read full article</a>
     
-    <a href=/sources/articles/fullarticle"{{article.urlToImage}}">click to read full article</a>
-    
     <br>
-    <img src="{{article.description}}">
+    <img  class="imgsrc" src="{{article.description}}">
     <br>
     <small><strong>publishedat</strong></small>{{article.publishedAt}}</small> <small><strong>published by</strong>{{article.author}}</small>
-   
-
+        </div>
+      </div>
     {% endfor %} 
 {% endmacro %}
 </div>

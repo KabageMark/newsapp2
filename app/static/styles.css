@@ -1,7 +1,11 @@
+html {
+    overflow-y: scroll;
+    }
 .body{
     padding-left: 300px;
     padding-right:300px;
 }
-img{
-    size: 20px;
+.imgsrc{
+    border-radius: 25px;
+    width: 120px;
 }
