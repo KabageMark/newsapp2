@@ -15,7 +15,7 @@
 <center><h1>Top Headlines</h1></center>
     {% for article in articles_list %}
    
-    <div class="panel panel-primary">
+    <!-- <div class="panel panel-primary">
         <div class="panel-heading">
             {{article.author}}</div>
         <div class="panel-body">
@@ -25,8 +25,27 @@
     <img  class="imgsrc" src="{{article.description}}">
     <br>
     <small><strong>publishedat</strong></small>{{article.publishedAt}}</small> <small><strong>published by</strong>{{article.author}}</small>
+        </div> -->
+      
+
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <img  class="imgsrc" src="{{article.description}}">
         </div>
-      </div>
+        <div class="mdl-card__supporting-text">
+            <p>{{article.publishedAt}}</p>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            FULL ARTICLE
+          </a>
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+          </button>
+        </div>
+      </div>  
     {% endfor %} 
 {% endmacro %}
 </div>

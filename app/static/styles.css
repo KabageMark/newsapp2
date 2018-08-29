@@ -5,7 +5,19 @@ html {
     padding-left: 300px;
     padding-right:300px;
 }
+.demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  
 .imgsrc{
-    border-radius: 25px;
-    width: 120px;
+    border: 1px solid #ddd; /* Gray border */
+    /* border-radius: 25px;  Rounded border */
+    padding: 5px; /* Some padding */
+    width: 300px; /* Set a small width */
+    height:176px;
+}
+
+/* Add a hover effect (blue shadow) */
+.imgsrc:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
