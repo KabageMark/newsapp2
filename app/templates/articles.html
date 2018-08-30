@@ -16,7 +16,7 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                  <a class="mdl-navigation__link" href="http://127.0.0.1:5000/sources">Sources</a>
+                  <a class="mdl-navigation__link" href="http://127.0.0.1:5000">Sources</a>
                   <a class="mdl-navigation__link" href="">Articles</a>
                   <a class="mdl-navigation__link" href="">Login</a>
                   <a class="mdl-navigation__link" href="">Sign up</a>
@@ -24,12 +24,15 @@
               </div>
             </header>
            <main class="mdl-layout__content">
-              <div class="page-content">  <div class="body">
-                {{macro.displayArticles(articles)}}
+              <div class="page-content">
+                  <div class="container">   
+        <div class="body">
+        {{macro.displayArticles(articles)}}
         {% endblock%}
         </div>
        </div>
       </main>
      </div>
      </div>
+    </div>
   

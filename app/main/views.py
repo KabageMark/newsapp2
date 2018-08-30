@@ -3,7 +3,7 @@ from ..request import get_articles
 from flask import render_template,request,redirect,url_for
 from . import main
                   
-@main.route('/sources')
+@main.route('/')
 def sources():
 
     '''
@@ -16,7 +16,7 @@ def sources():
     source_news_business = get_source('business')
     source_news_url = get_source('Url')
     title = 'Home - Welcome to The best Movie Review Website Online'
-    return render_template('sources.html', title = title,general = source_news_general,Url = source_news_url,sports = source_news_sports,technology = source_news_technology,business = source_news_business)
+    return render_template('index.html', title = title,general = source_news_general,Url = source_news_url,sports = source_news_sports,technology = source_news_technology,business = source_news_business)
 
 @main.route('/sources/articles/<id>')
 def articles(id):
