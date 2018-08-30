@@ -7,16 +7,29 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
     <div class="container-fluid">
-    <div class= "jumbotron">
-    <center><h1>News</h1></center>
-    </div>
-    <div class="body">
-        {{macro.displayArticles(articles)}}
-        <!-- Accent-colored raised button with ripple -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-    Button
-  </button>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Newshighlight</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                  <a class="mdl-navigation__link" href="http://127.0.0.1:5000/sources">Sources</a>
+                  <a class="mdl-navigation__link" href="">Articles</a>
+                  <a class="mdl-navigation__link" href="">Login</a>
+                  <a class="mdl-navigation__link" href="">Sign up</a>
+                </nav>
+              </div>
+            </header>
+           <main class="mdl-layout__content">
+              <div class="page-content">  <div class="body">
+                {{macro.displayArticles(articles)}}
+        {% endblock%}
+        </div>
+       </div>
+      </main>
+     </div>
+     </div>
   
-    </div>  
-</div>
-{% endblock%}

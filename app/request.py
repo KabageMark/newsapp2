@@ -87,8 +87,9 @@ def process_articles(articles_list):
             url = article_item.get('url')
             urlToImage = article_item.get('urlToImage')
             publsihedAt = article_item.get('publishedAt')
+            title = article_item.get('title')
 
-            article_object = Articles(id,author,urlToImage,description,url,publsihedAt)
+            article_object = Articles(id,title,author,urlToImage,description,url,publsihedAt)
             articles_results.append(article_object)
 
         return articles_results    

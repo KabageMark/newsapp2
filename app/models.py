@@ -15,8 +15,9 @@ class ARTICLES:
     NEWS class to define NEWS Objects
     '''
 
-    def __init__(self,id,author,description,Url,urlToImage,publishedAt):
+    def __init__(self,id,author,description,Url,urlToImage,publishedAt,title):
         self.id =id
+        self.title = title
         self.author = author
         self.description = description
         self.Url = Url

@@ -14,30 +14,17 @@
 <div class="container-fluid">
 <center><h1>Top Headlines</h1></center>
     {% for article in articles_list %}
-   
-    <!-- <div class="panel panel-primary">
-        <div class="panel-heading">
-            {{article.author}}</div>
-        <div class="panel-body">
-            <a href=/sources/articles/fullarticle"{{article.urlToImage}}">click to read full article</a>
-    
-    <br>
-    <img  class="imgsrc" src="{{article.description}}">
-    <br>
-    <small><strong>publishedat</strong></small>{{article.publishedAt}}</small> <small><strong>published by</strong>{{article.author}}</small>
-        </div> -->
-      
 
-      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
-            <img  class="imgsrc" src="{{article.description}}">
+            <img  class="imgsrc" src="{{article.Url}}" alt="image not provided by sited">
         </div>
         <div class="mdl-card__supporting-text">
-            <p>{{article.publishedAt}}</p>
+            <p>{{article.urlToImage}}</p>
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-            FULL ARTICLE
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" >
+            {{article.url}}
           </a>
         </div>
         <div class="mdl-card__menu">
@@ -49,3 +36,4 @@
     {% endfor %} 
 {% endmacro %}
 </div>
+</div>  
