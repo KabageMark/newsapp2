@@ -48,7 +48,6 @@ def process_source(source_list):
 
         source_object = News(id,name,country,description,Url)
         source_results.append(source_object)
-    # print(source_results)
     return source_results
 
 def get_articles(id):

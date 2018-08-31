@@ -1,4 +1,4 @@
-<div class="container-fluid">
+
 {% macro displaySources(sources_list)%}
     {% for source in sources_list %}
     <ul>
@@ -11,10 +11,9 @@
 
 {% macro displayArticles(articles_list)%}
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
-<div class="container-fluid">
 <center><h1>Top Headlines</h1></center>
     {% for article in articles_list %}
-
+<div class="container-fluid">
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
             <img  class="imgsrc" src="{{article.Url}}" alt="image not provided by sited">
@@ -34,10 +33,10 @@
             <i class="material-icons">share</i>
           </button>
         </div>
-      </div>
+    </div>
       <br>
-    </div> 
-</div> 
+    </div>
     {% endfor %} 
 {% endmacro %}
+  
 
