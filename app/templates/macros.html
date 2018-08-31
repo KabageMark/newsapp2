@@ -23,9 +23,11 @@
             <p>{{article.urlToImage}}</p>
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" >
-            {{article.url}}
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" {{article.author}}>
+            <P>FULL ARTILE</P> 
           </a>
+          <br>
+        <p><strong>published by</strong>{{article.description}} <strong>At</strong> {{article.title}}</p>
         </div>
         <div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
