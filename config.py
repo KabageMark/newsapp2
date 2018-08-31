@@ -3,7 +3,7 @@ import os
 class Config:
 
     SOURCE_API_BASE_URL ='https://newsapi.org/v2/sources?category={}&apiKey={}'
-    ARTICLE_API_BASE_URL = 'https://newsapi.org/v2/top-headlines?q=business&apiKey=c0ccbdb1740d4e6990dc52150c79dfd6'
+    ARTICLE_API_BASE_URL = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=c0ccbdb1740d4e6990dc52150c79dfd6'
     NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
