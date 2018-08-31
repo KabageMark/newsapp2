@@ -27,7 +27,7 @@
             <P>FULL ARTILE</P> 
           </a>
           <br>
-        <p><strong>published by</strong>{{article.description}} <strong>At</strong> {{article.title}}</p>
+        <p><strong>Published by </strong><u>{{article.description}}</u> <strong>At</strong> <u>{{article.title}}</u></p>
         </div>
         <div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -35,8 +35,9 @@
           </button>
         </div>
       </div>
-      <br>  
+      <br>
+    </div> 
+</div> 
     {% endfor %} 
 {% endmacro %}
-</div>
-</div>  
+
