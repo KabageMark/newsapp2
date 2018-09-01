@@ -1,5 +1,5 @@
-from .models import NEWS,ARTICLES
 import unittest
+from app.models import NEWS,ARTICLES
 class testNews(unittest.TestCase):
     def setUp(self):
             '''
@@ -14,8 +14,9 @@ class testNews(unittest.TestCase):
         '''
 
         self.assertEqual(self.new_news.id,1)
-        self.assertEqual(self.new_news.description,"BBC")
-        self.assertEqual(self.new_news.url,"Michael Cohen prosecuted")
+        self.assertEqual(self.new_news.name,"BBC")
+        self.assertEqual(self.new_news.description,"Michael Cohen prosecuted")
+        self.assertEqual(self.new_news.url,"http://www.aljazeera.com")
         self.assertEqual(self.new_news.country,"us")
 
 
@@ -42,3 +43,6 @@ class testNews(unittest.TestCase):
     #     test_account = Account("Test","user","test@user.com") 
     #     test_account.saveaccount()
     #     self.assertEqual(len(Account.account_list),2)
+
+# if __name__ == '__main__':
+#     unittest.main() 
