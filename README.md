@@ -7,7 +7,7 @@ This is a  Web application created by flask that allows users to see various new
 * Web browser
 * git hub account
 * running tests **command python3.6 manage.py tests**
-* running on local server **python3.6 start.sh**
+* running on local server **start.sh**
 
 {you only need to have a web browser and access to internet }
 ## Known Bugs
