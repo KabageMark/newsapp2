@@ -5,7 +5,7 @@ class testNews(unittest.TestCase):
             '''
             Set up method to run before each test cases.
             '''
-            self.new_news = NEWS(1,"BBC","Michael Cohen prosecuted","http://www.aljazeera.com","us") 
+            self.new_news = NEWS(1,"BBC","Michael Cohen prosecuted","http://www.aljazeera.com","us","general") 
 
 
     def test_init(self):
