@@ -21,4 +21,4 @@ def sources():
 @main.route('/sources/articles/<id>')
 def articles(id):
     articles_args = get_articles(id)
-    return render_template('articles.html',articles = articles_args) 
+    return render_template('articles.html',articles = articles_args)

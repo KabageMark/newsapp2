@@ -16,17 +16,17 @@
 <div class="container-fluid">
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
-            <img  class="imgsrc" src="{{article.Url}}" alt="image not provided by sited">
+            <img  class="imgsrc" src="{{article.publishedAt}}" alt="image not provided by sited">
         </div>
         <div class="mdl-card__supporting-text">
-            <p>{{article.urlToImage}}</p>
+            <p>{{article.description}}</p>
         </div>
         <div class="mdl-card__actions mdl-card--border">
           <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" {{article.author}}>
             <P>FULL ARTILE</P> 
           </a>
           <br>
-        <p><strong>Published by </strong><u>{{article.description}}</u> <strong>At</strong> <u>{{article.title}}</u></p>
+        <p><strong>Published by </strong><u>{{article.Url}}</u> <strong>At</strong> <u>{{article.urlToImage}}</u></p>
         </div>
         <div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
