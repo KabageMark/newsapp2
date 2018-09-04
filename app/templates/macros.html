@@ -1,11 +1,11 @@
 
 {% macro displaySources(sources_list)%}
     {% for source in sources_list %}
-    <ul>
-        <a  class="btn" href="/sources/articles/{{source.id}}">{{source.name}}</a>
-        {{source.description}}
-        
-    </ul>
+    <button type="button" class="mdl-chip">
+            <span class="mdl-chip__text"> <a  class="btn" href="/sources/articles/{{source.id}}">{{source.name}}</a>
+                {{source.description}}
+                </span>
+        </button>
     {% endfor %}
 {% endmacro %}
 
